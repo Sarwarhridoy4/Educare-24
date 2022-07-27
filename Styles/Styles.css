@@ -6,7 +6,7 @@
     color: #4a4a4a;
 }
 
-.button-bg {
+.btn-bg {
     background: #289bde;
 }
 
@@ -16,4 +16,8 @@
 
 .faq-bg {
     background: #e9f5fc;
+}
+.img img::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.486);
 }
