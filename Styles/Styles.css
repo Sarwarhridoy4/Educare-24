@@ -1,0 +1,19 @@
+/* Some Custom Color and style component. */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.brand-theme {
+    color: #4a4a4a;
+}
+
+.button-bg {
+    background: #289bde;
+}
+
+.course-tille {
+    color: #8d8d8d;
+}
+
+.faq-bg {
+    background: #e9f5fc;
+}
