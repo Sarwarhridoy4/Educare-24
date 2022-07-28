@@ -42,4 +42,10 @@ button.btn-bg {
     text-align: center;
     font-weight: 400;
 }
+.cover{
+    background-image: url(/Imges/working.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
