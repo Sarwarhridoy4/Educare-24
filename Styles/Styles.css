@@ -6,7 +6,7 @@
     color: #4a4a4a;
 }
 
-.btn-bg {
+button.btn-bg {
     background: #289bde;
 }
 
@@ -29,5 +29,17 @@
 }
 .carousel-caption{
     z-index: 2;
+}
+.popular-cource h1{
+
+    font-size: 3rem;
+    font-weight: 700;
+}
+    
+.popular-cource p{
+
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
 }
 
