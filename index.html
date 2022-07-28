@@ -21,6 +21,40 @@
 
 <body>
   <header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h5 class="modal-title" id="exampleModalLabel">Wellcome to Educare 24!</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign In</button>
+            <button type="button" class="btn btn-primary">Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Nav-Bar Start -->
     <nav class="navbar navbar-expand-lg bg-light sticky-top">
       <div class="container-fluid">
@@ -252,7 +286,7 @@
     <section class="explore mt-5">
       <div class="container d-block d-md-flex">
         <div class=" col-sm-12 col-md-4 col-lg-6 d-sm-block cover">
-          <img src="./Imges/working.png" alt="Working"class="img-fluid d-lg-none d-md-none">
+          <img src="./Imges/working.png" alt="Working" class="img-fluid d-lg-none d-md-none">
         </div>
         <div class="col-sm-12 col-md-8 col-lg-6 p-4 ">
           <h1 class="fs-1 fw-bold p-2">Explore The elearning Institute</h1>
@@ -260,28 +294,28 @@
             majority have suffered alteration in some form, by injected humour, or
             randomised words which don't look even slightly believable. If you are going
             to use a passage of Lorem Ipsum, you need to be sure.</p>
-            <p class="fs-5 px-2 text-justify">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-              generators on the Internet tend to repeat predefined.</p>
+          <p class="fs-5 px-2 text-justify">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+            generators on the Internet tend to repeat predefined.</p>
 
-              <div class="rating">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6 col-md-6 col-lg-4">
-                      <h3>3.2K+</h3>
-                      <p>Online Course</p>
-                    </div>
-                    <div class="col-6 col-md-6 col-lg-4">
-                      <h3>3.2K+</h3>
-                      <p>Online Course</p>
-                    </div>
-                    <div class="col-6 col-md-6 col-lg-4">
-                      <h3>3.2K+</h3>
-                      <p>Online Course</p>
-                    </div>
-                  </div>
-                  <button class="btn btn-bg px-5 py-3 shadow-lg">Read More..</button>
+          <div class="rating">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-md-6 col-lg-4">
+                  <h3>3.2K+</h3>
+                  <p>Online Course</p>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                  <h3>3.2K+</h3>
+                  <p>Online Course</p>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                  <h3>3.2K+</h3>
+                  <p>Online Course</p>
                 </div>
               </div>
+              <button class="btn btn-bg px-5 py-3 shadow-lg">Read More..</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -294,7 +328,10 @@
               readable content of a page when looking at its layout.</p>
           </div>
           <div class="left col-md-6 d-sm-block d-flex align-items-center justify-content-end d-md-block d-lg-flex">
-            <button class="btn bg-white text-bg px-5 py-3 fw-bold">Join Now</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn bg-light px-5 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Join Now
+            </button>
           </div>
         </div>
       </div>
