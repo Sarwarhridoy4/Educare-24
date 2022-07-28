@@ -9,6 +9,12 @@
 button.btn-bg {
     background: #289bde;
 }
+.bg {
+    background: #289bde;
+}
+.text-bg {
+    background: #289BDE;
+}
 
 .course-tille {
     color: #8d8d8d;
