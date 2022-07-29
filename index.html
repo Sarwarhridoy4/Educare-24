@@ -56,7 +56,7 @@
     </div>
 
     <!-- Nav-Bar Start -->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-2 brand-theme" href="#">Educare-24</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -68,24 +68,27 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#cources">Our Cources</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#hot-deals">Hot Deals</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#succ-story">Success Story</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#wwa">Who We Are</a>
+              <a class="nav-link" href="#clients">Clients</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Success Story</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><button
-                  class="btn btn-outline-info d-flex justify-content-space-between">Register</button></a>
+
+            <li class="nav-item" id="">
+              <a class="nav-link" href="#register"><button
+                  class="btn btn-outline-info d-flex justify-content-space-between">Register</button>
+              </a>
             </li>
           </ul>
         </div>
@@ -94,7 +97,7 @@
     <!-- Nav End -->
     <!-- hero Start -->
     <!-- Carousel -->
-    <div class="container">
+    <div class="container" id="home">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -157,7 +160,7 @@
     <!-- hero End -->
   </header>
   <main>
-    <section class="popular-cource mt-5" id="courses">
+    <section class="popular-cource mt-5" id="cources">
       <div class="container mt-2">
         <h1 class="text-center fs-1 font-bold">
           Discover Our Popular Courses
@@ -283,7 +286,7 @@
         <button class="btn btn-bg"><a class="nav-link" href="#courses">Explore More..</a></button>
       </div>
     </section>
-    <section class="explore mt-5">
+    <section class="explore mt-5" id="hot-deals">
       <div class="container d-block d-md-flex">
         <div class=" col-sm-12 col-md-4 col-lg-6 d-sm-block cover">
           <img src="./Imges/working.png" alt="Working" class="img-fluid d-lg-none d-md-none">
@@ -319,7 +322,7 @@
         </div>
       </div>
     </section>
-    <section class="join-offer mt-5">
+    <section class="join-offer mt-5" id="register">
       <div
         class="container shadow-lg rounded-5 d-flex d-md-flex-column align-items-center justify-content-center bg p-5">
         <div class="row">
@@ -337,56 +340,57 @@
         </div>
       </div>
     </section>
-    <section class="success mt-5">
+    <section class="success mt-5" id="succ-story">
       <div class="container">
         <h1 class="fw-bold text-center">Meet Our Successfull Students
         </h1>
         <p class="text-center">It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout.</p>
       </div>
-        <div class="container text-center">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
-            <div class="col">
-              <div class="card shadow-lg">
-                <img src="./Imges/student/student-1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Awlad Hossain</h5>
-                  <p class="card-text">UX/UI Designer</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg">
-                <img src="./Imges/student/student-2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Jannatul Islam</h5>
-                  <p class="card-text">Motion Design</p>                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg">
-                <img src="./Imges/student/student-3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Imran Hossain</h5>
-                  <p class="card-text">Graphic Designer</p>
-                </div>
-              </div>
-            </div>
-            <div class="col d-sm-none d-md-block">
-              <div class="card shadow-lg">
-                <img src="./Imges/student/student-4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Nishi Akhter</h5>
-                  <p class="card-text">Web Developer</p>
-                </div>
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./Imges/student/student-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Awlad Hossain</h5>
+                <p class="card-text">UX/UI Designer</p>
               </div>
             </div>
           </div>
-          <div class="button">
-            <button class="btn btn-outline-info px-5 py-3 mx-5 my-5 shadow-lg">See All</button>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./Imges/student/student-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jannatul Islam</h5>
+                <p class="card-text">Motion Design</p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="./Imges/student/student-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Imran Hossain</h5>
+                <p class="card-text">Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-sm-none d-md-block">
+            <div class="card shadow-lg">
+              <img src="./Imges/student/student-4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nishi Akhter</h5>
+                <p class="card-text">Web Developer</p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="button">
+          <button class="btn btn-outline-info px-5 py-3 mx-5 my-5 shadow-lg">See All</button>
+        </div>
+      </div>
     </section>
     <section class="feedback mt-5">
 
@@ -395,60 +399,79 @@
       <h1 class="text-center fw-bold">Have Question?</h1>
       <p class="text-center">Feel Free to check here.</p>
       <div class="container">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  CSS Box-model
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>Html treat every element in it as a box. Abox has a height, width. As same html element has also a height and width. This approach is called as "Box-Model".</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Bootstrap or Tailwind?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>Both have there own benefit. Bootstrap offer "Ready-Mate" component libraray to make it easy front-end design using that component. It gives less customisation opportunity. Other side Tailwind also have component library but most of them are premium but it has more customisation scope and used for modern age design flexiblities.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Flex vs Grid Which? When? Why?
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>As a begainer, every "Baby-Developer has this conflict of concept like What the heck is this <code>flex</code> and <code>grid</code>?
-                  Flex is a one dimentional array which can handel lay-out either <code>row</code> or <code>column</code></code>. On the other side, <code>grid</code> is two dimensional array can handel content both <code>row</code> and <code>column</code> wise. it give us more flexiblities then <code>flex</code>😀</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  What is Semantic Tag in HTML-5?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>In previous HTML-4, there are something called <code>div</code> and table. Which are "Non-Identical to developers. For This reason it was very hard to maintain all markup and debugig. semantic tags are well known by name like: <code>header</code> <br> <code>footer</code> <br> <code>main</code> <br> <code>section</code> <br> <code>article</code> <br> <code>aside</code> etc.</p>
-                </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                CSS Box-model
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>Html treat every element in it as a box. Abox has a height, width. As same html element has also a
+                  height and width. This approach is called as "Box-Model".</p>
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Bootstrap or Tailwind?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>Both have there own benefit. Bootstrap offer "Ready-Mate" component libraray to make it easy
+                  front-end design using that component. It gives less customisation opportunity. Other side Tailwind
+                  also have component library but most of them are premium but it has more customisation scope and used
+                  for modern age design flexiblities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Flex vs Grid Which? When? Why?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>As a begainer, every "Baby-Developer has this conflict of concept like What the heck is this
+                  <code>flex</code> and <code>grid</code>?
+                  Flex is a one dimentional array which can handel lay-out either <code>row</code> or
+                  <code>column</code></code>. On the other side, <code>grid</code> is two dimensional array can handel
+                  content both <code>row</code> and <code>column</code> wise. it give us more flexiblities then
+                  <code>flex</code>😀</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is Semantic Tag in HTML-5?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>In previous HTML-4, there are something called <code>div</code> and table. Which are "Non-Identical
+                  to developers. For This reason it was very hard to maintain all markup and debugig. semantic tags are
+                  well known by name like: <code>header</code> <br> <code>footer</code> <br> <code>main</code> <br>
+                  <code>section</code> <br> <code>article</code> <br> <code>aside</code> etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </Section>
-    <section class="Clients mt-5 my-5 d-none d-lg-block">
+    <section class="Clients mt-5 my-5 d-none d-lg-block" id="clients">
       <h1 class="text-center fw-bold my-3">Trusted by over 800+ companies</h1>
       <div class="container shadow-lg rounded-5">
         <div class="client-logo d-flex align-items-center justify-content-center gap-5">
@@ -464,10 +487,10 @@
   <footer class="footer mt-5">
     <div class="container d-flex justify-content-center align-items-center flex-column">
       <div class="content">
-      <h1 class="text-white fw-bold">Educare 24</h1>
-      <p class="text-white">H-65/A Mascot Plaza 10th floor</p>
-      <p class="text-white">Uttara, Dhaka,1230.</p>
-      <p class="text-white">Privacy Ploicy | Terms of use</p>
+        <h1 class="text-white fw-bold">Educare 24</h1>
+        <p class="text-white">H-65/A Mascot Plaza 10th floor</p>
+        <p class="text-white">Uttara, Dhaka,1230.</p>
+        <p class="text-white">Privacy Ploicy | Terms of use</p>
       </div>
     </div>
     <div class="icon d-flex align-items-center justify-content-center gap-5">
